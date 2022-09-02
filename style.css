@@ -10,7 +10,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    overflow-x:hidden;
+   
 }
 
 /*Global Tags*/
@@ -36,12 +37,14 @@ h6 {
 /* Nav-bar */
 
 nav {
-    position: sticky;
+    position: fixed;
     background-color: white;
     display: flex;
-    z-index: 4;
-    top: 0;
-    width: 100%;
+    z-index: 5;
+    top:0;
+
+    width: 100vw;
+    /* height: 6vw; */
     justify-content: space-between;
     padding: 1vw 8vw;
     align-items: center;
@@ -133,7 +136,9 @@ nav .nav-bar ul li a:hover {
 
 
 /* Heading  */
-
+#home{
+    margin-top:6rem;
+}
 
 
 .first {
@@ -216,19 +221,14 @@ nav .nav-bar ul li a:hover {
 .price {
 
     background-color: #fdc93b;
-    color: #fff;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    right: 25px;
-    bottom: 210px;
+    color: #37423b;
+    line-height: 40px;
+   ;
+    border-radius: 100%;
+   
+    padding: 10px;
 }
 
-.price h2 {
-    padding-top: 18px;
-    font-size: 25px;
-}
 
 .details button {
     margin-top: 1rem;
@@ -666,18 +666,127 @@ footer .copyright {
 /* courses Css */
 
 #courses{
-    
+    margin-top:6rem;
+}
+
+
+
+.index-courses-heading {
+    padding:1rem;
+    text-align: center;
+    background-color: #fff;
 }
 
 #courses .courses-heading{
     padding:1rem;
-    background-color:rgb(162, 162, 171) ;
+    background-color:#eef0ef;
     text-align: center;
     
 }
 
-#courses .courses{
-    padding:1rem;
-    text-align: center;
-
+#courses .course-box{
+    display: flex;
 }
+
+
+
+
+
+/* CSS For courses */
+
+.courses {
+    margin:3rem;
+    
+}
+
+
+
+.courses .course-item {
+    border-radius: 20px;
+    border: 1px solid #eef0ef;
+    /* border:1px solid black; */
+    overflow: hidden;
+    
+  }
+
+  .courses .course-item img{
+    width:101%;
+    height:40%;
+    /* border-radius: 20px; */
+    
+    background-size:contain;
+  }
+  
+  .courses .course-content {
+    padding: 15px;
+  }
+  
+  .courses .course-content h3 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .courses .course-content h3 a {
+    color: #37423b;
+    transition: 0.3s;
+  }
+
+  .course-items{
+    border-radius: 20px;
+  }
+
+  
+  
+  
+ 
+
+
+  
+  .courses .course-content h3 a:hover {
+    color: #fdc93b;
+  }
+  
+  .courses .course-content p {
+    font-size: 14px;
+    color: #777777;
+  }
+  
+  .courses .course-content h4 {
+    font-size: 16px;
+    font-weight: 700;
+    background: #fdc93b;
+    padding: 7px 14px;
+    color: #37423b;
+    margin: 0;
+  }
+  
+  .courses .course-content .price {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #37423b;
+  }
+  
+  .courses .trainer {
+    padding-top: 15px;
+    border-top: 1px solid #eef0ef;
+  }
+  
+  .courses .trainer .trainer-profile img {
+    max-width: 50px;
+    border-radius: 50px;
+  }
+  
+  .courses .trainer .trainer-profile span {
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5a6c60;
+  }
+  
+  .courses .trainer .trainer-rank {
+    font-size: 18px;
+    color: #657a6d;
+  }
+
+  
