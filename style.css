@@ -70,6 +70,8 @@ nav .nav-bar ul li {
 
 }
 
+
+
 nav .nav-bar ul li a {
     text-decoration: none;
     color: rgb(21, 21, 100);
@@ -81,6 +83,8 @@ nav .nav-bar ul li a {
 nav .nav-bar ul li a:hover {
     color: #fdc93b;
 }
+
+
 
 .nav-item button {
     background-color: white;
@@ -557,6 +561,8 @@ nav .nav-bar ul li a:hover {
 
 
 
+
+
 /* footer */
 
 footer {
@@ -662,6 +668,30 @@ footer .copyright {
 
 
 }
+
+
+@media (max-width:769px) {
+    nav {
+    padding:15px 20px;   
+    }
+
+    nav img {
+        width: 130px;
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* courses Css */
 
@@ -776,7 +806,7 @@ footer .copyright {
     max-width: 50px;
     border-radius: 50px;
   }
-  
+   
   .courses .trainer .trainer-profile span {
     padding-left: 10px;
     font-weight: 600;
@@ -788,5 +818,174 @@ footer .copyright {
     font-size: 18px;
     color: #657a6d;
   }
+
+
+
+
+
+
+
+  /* Course Details pages CSS  */
+
+  
+  #course-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding:5rem;
+  }
+
+  #course-inner h3{
+    padding:35px 0 25px 0; 
+    color:#29203b;
+  }
+
+
+  #course-inner p{
+    color:#64626e;
+  }
+
+  #course-inner hr{
+    height:1px;
+    background: rgba(236,226,229,0.5);
+    margin-top:40px;
+  }
+  
+  #course-inner .overview{
+    width: 70%;
+  }
+  #course-inner .overview .course-img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  #course-inner .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+  }
+
+  #course-inner .overview .course-head .c-name{
+    width: 70%;
+  }
+
+  #course-inner .overview .course-head .c-name h2{
+    color:#29303b;
+  }
+
+  #course-inner .overview .course-head .c-name .sub-heading{
+    margin:8px 0;
+  }
+
+  #course-inner .overview .course-head .c-name .sub-heading span{
+    font-size: 16px;
+    font-weight: 700;
+    background: #fdc93b;
+    padding: 7px 14px;
+    color: #37423b;
+  }
+
+  #course-inner .overview .course-head .c-name p{
+    font-size:15px;
+  }
+
+  #course-inner .overview .course-head span{
+    padding:16px 22px;
+    border-radius: 10px;
+    color:#5838fc;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgba(88,56,252,0.1);
+  }
+
+  #course-inner .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+
+  }
+
+  #course-inner .learn p i{
+    color:#654ce4;
+    font-weight: 700;
+    margin-right: 20px;
+  }
+
+  #course-inner .tutor{
+    display: flex;
+
+  }
+  #course-inner .tutor img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+  }
+  #course-inner .tutor .tutor-det h5{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  #course-inner .tutor .tutor-det p{
+    font-size: 15px;
+  }
+
+  #course-inner .enroll{
+    width: 350px;
+    padding:0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0px 20px 40px 0 rgb(11 2 55/ 50%)
+  }
+
+  #course-inner .enroll h3{
+    padding-bottom: 10px;
+  }
+
+  #course-inner .enroll p{
+    font-size: 15px;
+    color: #64626e;
+    margin:15px 0;
+  }
+
+  #course-inner .enroll p i{
+    font-size: 18px;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  #course-inner .enroll .enroll-btn{
+    padding: 25px 0 20px 0;
+    margin:auto;
+    text-align: center;
+  }
+
+  #course-inner .enroll .enroll-btn a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 45px;
+    border-radius: 5px;
+    font-weight: 600;
+    color:#ffff;
+    background: rgb(50,50,136);
+  }
+
+
+
+
+
+
+
+   
+
+    
+
+
 
   
