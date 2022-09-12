@@ -42,9 +42,7 @@ nav {
   display: flex;
   z-index: 5;
   top: 0;
-
   width: 100vw;
-  /* height: 6vw; */
   justify-content: space-between;
   padding: 1vw 8vw;
   align-items: center;
@@ -60,8 +58,8 @@ nav img {
 nav .nav-bar ul {
   display: flex;
   justify-content: center;
-  justify-items: center;
   align-items: center;
+  padding:0;
 }
 
 nav .nav-bar ul li {
@@ -102,6 +100,21 @@ nav .nav-bar ul li a:hover {
   background-color: #4CAF50;
   /* Green */
   color: white;
+}
+
+.ham-nav{
+  margin-top:6.8vw;
+  width:100vw;
+  background-color: #101c32;
+}
+
+.ham-nav ul {
+  list-style: none;
+  
+}
+
+.ham-nav ul li a{
+  text-decoration: none;
 }
 
 /* sm */
@@ -801,7 +814,7 @@ footer .copyright {
 
 
 
-@media (max-width:769px) {
+/* @media (max-width:832px) {
   nav {
     padding: 15px 20px;
   }
@@ -811,4 +824,82 @@ footer .copyright {
 
   }
 
+} */
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+  .sm{
+    display: none;
+  }
+
+  nav li{
+    display: none;
+  }
+
+  #burger-menu{
+    display:flex;
+  }
+
+  
+
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+
+
+  .sm{
+    display: none;
+  }
+  nav li{
+    display: none;
+  }
+
+ #burger-menu{
+    display:flex;
+  }
+
+  
+  
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  .sm{
+    display: none;
+  }
+
+  nav li{
+    display: none;
+  }
+
+  #burger-menu{
+    display:flex;
+  }
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+.sm{
+  display:flex;
+}
+nav li{
+  display: flex;
+}
+#burger-menu{
+  display:none;
+}
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+.sm{
+  display:flex;
+}
+nav li{
+  display: flex;
+}
+#burger-menu{
+  display:none;
+}
 }
